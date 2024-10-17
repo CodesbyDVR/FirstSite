@@ -17,6 +17,7 @@ const colors = [
   "#D4EFDF",
   "#F9E79F",
   "#FADBD8",
+  "#FADD12",
 ];
 
 let i = 0;
@@ -36,4 +37,9 @@ window.addEventListener("click", function (e) {
   if (!dropdownMenu.contains(e.target) && !menuToggleBtn.contains(e.target)) {
     dropdownMenu.classList.remove("active");
   }
+});
+document.getElementById("courses-btn").addEventListener("click", function () {
+  document
+    .getElementById("courses-section")
+    .scrollIntoView({ behavior: "smooth" });
 });

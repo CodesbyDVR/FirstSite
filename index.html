@@ -3,105 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Site</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="Files/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="Files/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="Files/favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-    <link rel="stylesheet" href="My.css" />
+    <title>Loading...</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("Files/Loading.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        /* background-color: #046d8b; Fallback background color */
+      }
+
+      .loading-container {
+        text-align: center;
+        padding: 40px;
+        background-color: inherit;
+        border-radius: 30px;
+        box-shadow: 0 0 15px rgba(59, 59, 59, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        margin: 0 0 20px 0;
+        color: white;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .loader {
+        width: 40px;
+        aspect-ratio: 1;
+        --c: no-repeat linear-gradient(#fe0707 0 0);
+        background: var(--c), var(--c), var(--c), var(--c), var(--c), var(--c);
+        animation: l6-1 2s infinite, l6-2 2s infinite;
+      }
+
+      @keyframes l6-1 {
+        0% {
+          background-size: 0 4px, 4px 0, 0 4px, 4px 0, 0 4px, 4px 0;
+        }
+        8.33% {
+          background-size: 100% 4px, 4px 0, 0 4px, 4px 0, 4px 0;
+        }
+        16.67% {
+          background-size: 100% 4px, 4px 50%, 0 4px, 4px 0, 4px 0;
+        }
+        25% {
+          background-size: 100% 4px, 4px 50%, 50% 4px, 4px 0, 4px 0;
+        }
+        33.33% {
+          background-size: 100% 4px, 4px 50%, 50% 4px, 4px 100%, 4px 0;
+        }
+        41.67% {
+          background-size: 100% 4px, 4px 50%, 50% 4px, 4px 100%, 50% 4px;
+        }
+        48%,
+        52% {
+          background-size: 100% 4px, 4px 50%, 50% 4px, 4px 100%, 50% 4px;
+        }
+        58.33% {
+          background-size: 0 4px, 4px 50%, 50% 4px, 4px 100%, 50% 4px;
+        }
+        66.67% {
+          background-size: 0 4px, 4px 0, 50% 4px, 4px 100%, 50% 4px;
+        }
+        75% {
+          background-size: 0 4px, 4px 0, 0 4px, 4px 100%, 50% 4px;
+        }
+        83.33% {
+          background-size: 0 4px, 4px 0, 0 4px, 4px 0, 50% 4px;
+        }
+        91.67% {
+          background-size: 0 4px, 4px 0, 0 4px, 4px 0, 0 4px;
+        }
+        100% {
+          background-size: 0 4px, 4px 0, 0 4px, 4px 0, 0 4px;
+        }
+      }
+
+      @keyframes l6-2 {
+        0%,
+        49.9% {
+          background-position: 0 50%, right 0 bottom 20px, 100% 0, 50% 0,
+            right 20px bottom 0, 0 100%;
+        }
+        50%,
+        100% {
+          background-position: 100% 50%, 100% 0, left 20px top 0, 50% 100%,
+            0 100%, 0 20px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <header class="head">
-      <img
-        id="icon"
-        style="display: inline-block; height: 70px; width: auto"
-        src="Files/D.png"
-        alt="img"
-      />
-      <h1 id="title">My Site</h1>
-    </header>
-    <nav class="navbar">
-      <div class="left-nav">
-        <a href="#">Home</a>
-        <a
-          href="https://drive.google.com/drive/folders/12AWi-X5U-doLgnukh2rUOmpbXGC862-9"
-          target="_blank"
-          >Courses(Shareable)</a
-        >
-        <a
-          href="https://oa.cc.iitk.ac.in/Oa/Jsp/Main_Frameset.jsp"
-          target="_blank"
-          >OA Portal</a
-        >
-        <a href="#">More coming soon..</a>
-      </div>
-      <div class="right-nav">
-        <button class="menu-toggle" id="menu-toggle-btn">&#9776;</button>
-        <!--toggle button -->
-      </div>
-    </nav>
-    <div class="dropdown-menu" id="dropdown-menu">
-      <a href="#">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
+    <div class="loading-container">
+      <h1>Loading, Please Wait...</h1>
+      <div class="loader"></div>
     </div>
-    <main>
-      <section>
-        <h1><span>Courses</span></h1>
-        <div class="course-container">
-          <div class="course-block">
-            <a href="Q.html" target="_blank">
-              <img src="Files/Q.jpg" width="100%" height="auto" />
-            </a>
-          </div>
-
-          <div class="course-block">
-            <a href="M.html" target="_blank">
-              <img src="Files/MTH.webp" width="100%" height="auto" />
-            </a>
-          </div>
-
-          <div class="course-block">
-            <a href="Coding.html" target="_blank">
-              <img src="Files/C.jpg" width="100%" height="auto" />
-            </a>
-          </div>
-
-          <div class="course-block">
-            <a href="Files/LIF" target="_blank">
-              <img src="Files/B.webp" width="100%" height="auto" />
-            </a>
-          </div>
-        </div>
-        <br />
-      </section>
-
-      <section class="creator">
-        <h1><em>Created By</em></h1>
-        <img id="img" src="Files/IMG.jpg" width="25%" height="800" />
-      </section>
-      <a ping="www.youtube.com www.google.com www.amazon.in"></a>
-
-      <footer>This Site is not under public domain to be accessible</footer>
-      <script src="My.js"></script>
-    </main>
+    <script>
+      setTimeout(function () {
+        window.location.href = "index-main.html";
+      }, 3500);
+    </script>
   </body>
 </html>

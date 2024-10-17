@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantum Mechanics</title>
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="https://img.icons8.com/forma-regular/24/d.png"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f28cbc;
+        color: #333;
+      }
+
+      .head {
+        background-color: #25f1b7;
+        text-align: center;
+        padding: 2rem 0;
+      }
+
+      #icon {
+        display: inline-block;
+        height: 70px;
+        width: auto;
+      }
+
+      #title {
+        text-shadow: 2px 2px 5px rgb(63, 104, 158);
+        color: rgb(162, 22, 222);
+        margin: 1rem 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background: #e4c0c0;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: grey;
+        margin: 1.5rem 0;
+      }
+
+      .button-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
+
+      .button {
+        border: none;
+        background-color: transparent;
+        padding: 10px;
+      }
+
+      .button a {
+        display: inline-block;
+        padding: 15px 25px;
+        background-color: #ff0000;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s;
+      }
+
+      .button a:hover {
+        background-color: #c00000; /* Darker red on hover */
+      }
+
+      .acadly-button a {
+        background-color: #0075f3;
+      }
+
+      .acadly-button a:hover {
+        background-color: #005bb5; /* Darker blue on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="head">
+      <img id="icon" src="Files/D.png" alt="img" />
+      <h1 id="title">PHYSICS</h1>
+    </header>
+
+    <div class="container">
+      <section class="button-container">
+        <h2>Physics Lecturers</h2>
+        <button class="button">
+          <a href="Files/PHY114/Mr. M.K. Harbola" target="_blank">
+            <h3>Prof. Siva Chandran</h3>
+          </a>
+        </button>
+        <button class="button">
+          <a href="Files/PHY114/Mr. M.K. Harbola" target="_blank">
+            <h3>Prof. M.K. Harbola</h3>
+          </a>
+        </button>
+        <button class="button">
+          <a href="Files/PHY114/Mr. Y.N. Mohapatra" target="_blank">
+            <h3>Prof. Y.N. Mohapatra</h3>
+          </a>
+        </button>
+      </section>
+
+      <hr />
+
+      <h2>Additional Resources</h2>
+      <section class="acadly-button">
+        <button class="button">
+          <a href="https://app.acadly.com/home" target="_blank">
+            <h3>ACADLY</h3>
+          </a>
+        </button>
+      </section>
+    </div>
+
+    <script src="My.js"></script>
+  </body>
+</html>

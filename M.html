@@ -4,130 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mathematics</title>
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="https://img.icons8.com/forma-regular/24/d.png"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #7a8b95;
+        color: #333;
+      }
+
+      .head {
+        background-color: #25f1b7;
+        text-align: center;
+        padding: 2rem 0;
+      }
+
+      #icon {
+        display: inline-block;
+        height: 70px;
+        width: auto;
+      }
+
+      #title {
+        text-shadow: 2px 2px 5px rgb(63, 104, 158);
+        color: rgb(162, 22, 222);
+        margin: 1rem 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background: #eac0c0;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      fieldset {
+        border: 1px solid #92b0d1;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        padding: 1rem;
+      }
+
+      legend {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #0075f3;
+      }
+
+      .button {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+      }
+
+      .button a {
+        display: inline-block;
+        padding: 15px 25px;
+        background-color: #92b0d1;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s;
+        width: 100%;
+      }
+
+      .button a:hover {
+        background-color: #6da5ea; /* Darker blue on hover */
+      }
+
+      h3 {
+        margin: 0; /* Remove margin for h3 elements */
+      }
+
+      hr {
+        margin: 2rem 0; /* Add margin to horizontal rules */
+        border: none;
+        border-top: 1px solid #ddd;
+      }
+    </style>
   </head>
   <body>
-    <h1><em>MTH Courses</em></h1>
-    <div style="display: flex; justify-content: flex-start; gap: 20px">
-      <fieldset style="width: 50%">
-        <legend>Sem I</legend>
-        <button style="border: none; background-color: transparent; padding: 0">
-          <a
-            href="Files/MTH111"
-            target="_blank"
-            style="
-              display: inline-block;
-              padding: 10px 20px;
-              background-color: #92b0d1;
-              color: white;
-              text-decoration: none;
-              border-radius: 5px;
-            "
-          >
-            <h3>MTH111</h3></a
-          >
-        </button>
-        <button style="border: none; background-color: transparent; padding: 0">
-          <a
-            href="Files/MTH112"
-            target="_blank"
-            style="
-              display: inline-block;
-              padding: 10px 20px;
-              background-color: #92b0d1;
-              color: white;
-              text-decoration: none;
-              border-radius: 5px;
-            "
-          >
-            <h3>MTH112</h3></a
-          >
-        </button>
-      </fieldset>
-      <hr />
-      <fieldset style="width: 50%">
-        <legend>Sem II</legend>
-        <button style="border: none; background-color: transparent; padding: 0">
-          <a
-            href="https://sites.google.com/site/abhijitwebpage/teaching/linear-algebra-mth113m?authuser=0"
-            target="_blank"
-            style="
-              display: inline-block;
-              padding: 10px 20px;
-              background-color: #92b0d1;
-              color: white;
-              text-decoration: none;
-              border-radius: 5px;
-            "
-          >
-            <h3>MTH113</h3></a
-          >
-        </button>
-        <button style="border: none; background-color: transparent; padding: 0">
-          <a
-            href="https://sites.google.com/view/mth114-ode/home"
-            target="_blank"
-            style="
-              display: inline-block;
-              padding: 10px 20px;
-              background-color: #92b0d1;
-              color: white;
-              text-decoration: none;
-              border-radius: 5px;
-            "
-            ><h3>MTH114</h3></a
-          >
-        </button>
-      </fieldset>
-      <hr />
-      <fieldset style="width: 50%">
-        <legend>Sem III</legend>
-        <button style="border: none; background-color: transparent; padding: 0">
-          <a
-            href="#"
-            target="_blank"
-            style="
-              display: inline-block;
-              padding: 10px 20px;
-              background-color: #92b0d1;
-              color: white;
-              text-decoration: none;
-              border-radius: 5px;
-            "
-          >
-            <h3>MTH201</h3></a
-          >
-        </button>
-        <button style="border: none; background-color: transparent; padding: 0">
-          <a
-            href=""
-            target="_blank"
-            style="
-              display: inline-block;
-              padding: 10px 20px;
-              background-color: #92b0d1;
-              color: white;
-              text-decoration: none;
-              border-radius: 5px;
-            "
-            ><h3>MSO205</h3></a
-          >
-        </button>
-        <button style="border: none; background-color: transparent; padding: 0">
-          <a
-            href=""
-            target="_blank"
-            style="
-              display: inline-block;
-              padding: 10px 20px;
-              background-color: #92b0d1;
-              color: white;
-              text-decoration: none;
-              border-radius: 5px;
-            "
-            ><h3>MTH302</h3></a
-          >
-        </button>
-      </fieldset>
+    <header class="head">
+      <img id="icon" src="Files/D.png" alt="img" />
+      <h1 id="title">MATHEMATICS</h1>
+    </header>
+
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; gap: 20px">
+        <fieldset style="flex: 1">
+          <legend>Sem I</legend>
+          <div class="button">
+            <a href="Files/MTH111" target="_blank"><h3>MTH111</h3></a>
+          </div>
+          <div class="button">
+            <a href="Files/MTH112" target="_blank"><h3>MTH112</h3></a>
+          </div>
+        </fieldset>
+
+        <fieldset style="flex: 1">
+          <legend>Sem II</legend>
+          <div class="button">
+            <a
+              href="https://sites.google.com/site/abhijitwebpage/teaching/linear-algebra-mth113m?authuser=0"
+              target="_blank"
+              ><h3>MTH113</h3></a
+            >
+          </div>
+          <div class="button">
+            <a
+              href="https://sites.google.com/view/mth114-ode/home"
+              target="_blank"
+              ><h3>MTH114</h3></a
+            >
+          </div>
+        </fieldset>
+
+        <fieldset style="flex: 1">
+          <legend>Sem III</legend>
+          <div class="button">
+            <a href="#" target="_blank"><h3>MTH201</h3></a>
+          </div>
+          <div class="button">
+            <a href="#" target="_blank"><h3>MSO205</h3></a>
+          </div>
+          <div class="button">
+            <a href="#" target="_blank"><h3>MTH302</h3></a>
+          </div>
+        </fieldset>
+      </div>
     </div>
+    <script src="My.js">
+      </scriptsrc>;
+    </script>
   </body>
 </html>
