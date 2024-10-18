@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta naem="view-transition" content="'same-origin" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Site</title>
+    <!-- <link rel="manifest" href="site.webmanifest" /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link
       type="image/png"
       sizes="16x16"
@@ -21,9 +27,14 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="My.css" />
   </head>
-  <body class="courses-page">
+  <body>
     <header class="head">
       <img
         id="icon"
@@ -32,71 +43,88 @@
         alt="img"
       />
       <h1 id="title">ιστοσελίδα</h1>
+
+      <nav>
+        <ul class="nav-list">
+          <li class="active">
+            <a href="index-main.html" aria-current="page">HOME</a>
+          </li>
+          <li>
+            <a href="courses.html">COURSES</a>
+          </li>
+          <li>
+            <a href="WL.html">WatchList</a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/drive/folders/12AWi-X5U-doLgnukh2rUOmpbXGC862-9"
+              target="_blank"
+              >CoursesDrive</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
-    <nav class="navbar">
-      <div class="left-nav">
-        <a href="#">HOME</a>
-        <a href="#courses-section">COURSES</a>
-        <a
-          href="https://drive.google.com/drive/folders/12AWi-X5U-doLgnukh2rUOmpbXGC862-9"
-          target="_blank"
-          >CoursesDrive</a
-        >
-      </div>
-    </nav>
-    <!-- <div class="dropdown-menu" id="dropdown-menu">
-      <a
-        href="https://drive.google.com/drive/folders/12AWi-X5U-doLgnukh2rUOmpbXGC862-9"
-        target="_blank"
-        >Courses(Shareable)</a
-      >
-      <a
-        href="https://oa.cc.iitk.ac.in/Oa/Jsp/Main_Frameset.jsp"
-        target="_blank"
-        >OA Portal</a
-      >
-      <a href="#">More</a>
-    </div> -->
     <main>
-      <section id="courses-section">
-        <!-- <div class="background-blur"></div> -->
-        <h1><span>Courses</span></h1>
-        <div class="course-container">
-          <div class="course-block">
-            <a href="PHY.html" target="_blank">
-              <img src="Files/Q.jpg" width="100%" height="auto" />
+      <section id="hero-section">
+        <div class="intro-container">
+          <h1>Konnichiwa , Dinesh Desu</h1>
+          <p>Chess Enthusiast, Web Developer, and Data Science Explorer</p>
+        </div>
+      </section>
+      <hr />
+      <section id="skills-section">
+        <h2>Interests</h2>
+        <div class="skills-container">
+          <div class="skill-block">
+            <a href="https://github.com/CodesbyDVR" target="_blank">
+              <h3>Web Development</h3>
+              <p>
+                Proficient in HTML, CSS, JavaScript. I love building responsive
+                websites.
+              </p>
+            </a>
+          </div>
+          <div class="skill-block">
+            <a href="https://github.com/DineshIITK" target="_blank">
+              <h3>Data Science</h3>
+              <p>Interested in data analytics, ML, and Data visualization.</p>
+            </a>
+          </div>
+          <div class="skill-block">
+            <a id="chess-link" href="#">
+              <h3>Chess</h3>
+              <p>Click to play</p>
             </a>
           </div>
 
-          <div class="course-block">
-            <a href="M.html" target="_blank">
-              <img src="Files/MTH.webp" width="100%" height="auto" />
-            </a>
-          </div>
+          <!-- <div class="skill-block">
+            <h3>Novels</h3>
+            <p>Enjoy reading novels, especially fiction and thrillers.</p>
+          </div> -->
+        </div>
+      </section>
 
-          <div class="course-block">
-            <a href="Coding.html" target="_blank">
-              <img src="Files/C.jpg" width="100%" height="auto" />
-            </a>
+      <!-- Projects Section -->
+      <section id="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+          <div class="project-block">
+            <h3>Web Development</h3>
+            <p>A personal portfolio showcasing web development projects.</p>
           </div>
-
-          <div class="course-block">
-            <a href="Files/LIF" target="_blank">
-              <img src="Files/B.webp" width="100%" height="auto" />
-            </a>
+          <div class="project-block">
+            <h3>Data Science</h3>
+            <p>Data visualization and machine learning projects.</p>
           </div>
         </div>
-        <br />
       </section>
 
-      <section class="creator">
-        <h1><em>Developer:</em></h1>
-        <img id="img" src="Files/IMG.jpg" width="25%" height="800" />
-      </section>
-      <a ping="www.youtube.com www.google.com www.amazon.in"></a>
-
-      <footer>This Site is not under public domain to be accessible</footer>
-      <script src="My.js"></script>
+      <footer>
+        <p>&copy; 2024 Dinesh. All Rights Reserved.</p>
+      </footer>
     </main>
+
+    <script src="My.js"></script>
   </body>
 </html>

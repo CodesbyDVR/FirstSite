@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="My.css" />
+    <style>
+      #courses-section {
+        padding: 50px;
+        background-color: var(--body-bg);
+      }
+
+      h1 span {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        margin-bottom: 40px;
+        color: #f7f5f5;
+      }
+
+      .course-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+
+      .course-block {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .course-block:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .course-block img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+      }
+
+      .course-block a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .course-block::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .course-block:hover::before {
+        opacity: 1;
+      }
+
+      .course-block:hover img {
+        filter: brightness(70%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="head">
+      <img
+        id="icon"
+        style="display: inline-block; height: 100px; width: auto"
+        src="Files/D.png"
+        alt="img"
+      />
+      <h1 id="title">ιστοσελίδα</h1>
+
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="index-main.html" aria-current="page">HOME</a>
+          </li>
+          <li class="active">
+            <a href="courses.html">COURSES</a>
+          </li>
+          <li>
+            <a href="WL.html">WatchList</a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/drive/folders/12AWi-X5U-doLgnukh2rUOmpbXGC862-9"
+              target="_blank"
+              >CoursesDrive</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="courses-section">
+        <!-- <div class="background-blur"></div> -->
+        <h1><span>Courses</span></h1>
+        <div class="course-container">
+          <div class="course-block">
+            <a href="PHY.html" target="_blank">
+              <img src="Files/Q.jpg" width="100%" height="auto" />
+            </a>
+          </div>
+
+          <div class="course-block">
+            <a href="M.html" target="_blank">
+              <img src="Files/MTH.webp" width="100%" height="auto" />
+            </a>
+          </div>
+
+          <div class="course-block">
+            <a href="Coding.html" target="_blank">
+              <img src="Files/C.jpg" width="100%" height="auto" />
+            </a>
+          </div>
+
+          <div class="course-block">
+            <a href="Files/LIF" target="_blank">
+              <img src="Files/B.webp" width="100%" height="auto" />
+            </a>
+          </div>
+        </div>
+        <br />
+      </section>
+      <footer>
+        <p>&copy; 2024 Dinesh. All Rights Reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>
